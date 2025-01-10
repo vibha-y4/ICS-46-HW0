@@ -1,11 +1,11 @@
-# ICS 45C Homework 0
+# ICS 46 Homework 0
 
 For Homework 0, we set up the accounts and tools needed for this course.
 
 **Overview**
 1. Set up our VPN. We need access to services that require we are within UCI's network. When we are on campus, we do nto need to use the VPN, but whenever we try to access these services off campus, we will be required to use it.
-2. Activate our ICS Account. This is **NOT** the same as our UCI NetID. We need this account to access the ICS 45C Hub.
-3. Login to the ICS 45C Hub, where we develop all our programs. Hub provides an online editor with tools such as Visual Studio.
+2. Activate our ICS Account. This is **NOT** the same as our UCI NetID. We need this account to access the ICS 46 Hub.
+3. Login to the ICS 46 Hub, where we develop all our programs. Hub provides an online editor with tools such as Visual Studio.
 4. Set up `git`.
 5. Complete a basic C++ program, to verify that our environment is correctly set up.
 6. Compile with `g++` and run.
@@ -24,9 +24,9 @@ Go to [UCI VPN](https://uci.service-now.com/sp?id=kb_article_view&sysparm_articl
 Create your ICS Account using this link: [ICS Account Creation Website](https://support.ics.uci.edu/auth).
    - You need to be on campus or use the VPN.
 
-## 3. Log in to the ICS 45C Hub
+## 3. Log in to the ICS 46 Hub
 
-Login to the course Hub using this link: [ICS 45C Hub](http://ics45c-hub.ics.uci.edu/)
+Login to the course Hub using this link: [ICS 46 Hub](http://ics46-hub.ics.uci.edu/)
    - You need to be on campus or use the VPN.
    - You need to log in with your ICS Account.
    - When logging in, use just the username, not the full email (use `example` **NOT** `example@ics.uci.edu`)
@@ -44,7 +44,7 @@ Login to the course Hub using this link: [ICS 45C Hub](http://ics45c-hub.ics.uci
 ### 1 GitHub Account
 
 GitHub is an online storage service for the tool `git`, an industry standard version control tool with many powerful capabilities. For this course, `git` allows you to
-- easily obtain files needed for each Homework from the ICS45C course repository,
+- easily obtain files needed for each Homework from the ICS46 course repository,
 - save your work in your own account on GitHub (in different versions/branches if you choose, so that you can try different approaches or changes without breaking what you were working on before), and
 - easily upload your Homework submissions to GradeScope directly from GitHub.
 
@@ -106,17 +106,17 @@ Now that you have created your SSH key on Hub, add it to **your** `GitHub` accou
 
 ### 3 Make your own private repository on GitHub Classroom
 
-Now that you have set up your `username`, `email`, and `ssh` key, navigate back to the Canvas page, and click the GitHub Classroom link. That link will automatically generate a private copy of this repository for you! (NOTE: It will ask you to authorize GitHub Classroom to have access to your GitHub account, and you should confirm this authorization). Once you have created that repository, you can continue on to the `Clone` instructions in Step 4. Go to the browser tab with your private `ics-45c-hw0-<yourgithubid>` repository to continue with the instructions.
+Now that you have set up your `username`, `email`, and `ssh` key, navigate back to the Canvas page, and click the GitHub Classroom link. That link will automatically generate a private copy of this repository for you! (NOTE: It will ask you to authorize GitHub Classroom to have access to your GitHub account, and you should confirm this authorization). Once you have created that repository, you can continue on to the `Clone` instructions in Step 4. Go to the browser tab with your private `ics-46-hw0-<yourgithubid>` repository to continue with the instructions.
 
 ### 4 Clone this repository
 
-Now that you have a private copy of this repository, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your private `GitHub Classroom` ICS45C (`ics-45c-hw0-<yourgithubid>`) repository to your Hub. On Hub, you can clone a GitHub repository by using the command `git clone` and copy-pasting the **SSH link** you get when clicking the green `Code` button. Example below:
+Now that you have a private copy of this repository, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your private `GitHub Classroom` ICS46 (`ics-46-hw0-<yourgithubid>`) repository to your Hub. On Hub, you can clone a GitHub repository by using the command `git clone` and copy-pasting the **SSH link** you get when clicking the green `Code` button. Example below:
 
 ![](docs/clone_link.png)
 
 First lets create a new folder to store all of our repos:
 
-Create a folder named `ICS45C`
+Create a folder named `ICS46`
 
 ![Step 1](/assets/4-1.jpg)
 ![Step 2](/assets/4-2.jpg)
@@ -129,20 +129,20 @@ Now run the following command:
 # This is an example ssh link, make sure to use your own!
 # NOTE: the `HW0` following the .git address indicates what folder to
 # name the project you are cloning.
-git clone git@github.com:klefstad-teaching/ics-45c-hw0-<GitHubUserName>.git HW0
+git clone git@github.com:klefstad-teaching/ics-46-hw0-<GitHubUserName>.git HW0
 ```
 
 At the prompt `Are you sure you want to continue connecting (yes/no/[fingerprint])?` type `yes`.
 
 This `git clone ...` command initializes a new git repository on your Hub and populates it with the contents of the private `HW0` repository from GitHub Classroom, adding the directory `HW0` to your current working directory, which you can see by typing the `ls` command.
 
-The `git clone` command also establishes the private course repository at `HW0` as a `remote` connection called `origin`. `origin` is an alias (short nickname) for `git@github.com:klefstad-teaching/ics-45c-hw0-<GitHubUserName>.git` so that you don't have to type that long connection path every time. You can then  `checkout` files from `origin`for all the future Homeworks (from the different branches named `hw0`, `hw1`...)---but **only after they are announced as available on Ed**!
+The `git clone` command also establishes the private course repository at `HW0` as a `remote` connection called `origin`. `origin` is an alias (short nickname) for `git@github.com:klefstad-teaching/ics-46-hw0-<GitHubUserName>.git` so that you don't have to type that long connection path every time. You can then  `checkout` files from `origin`for all the future Homeworks (from the different branches named `hw0`, `hw1`...)---but **only after they are announced as available on Ed**!
 
 ## 5. Complete a Basic C++ program
 
 1. Exit out of the terminal and click the **VS Code** link, the last link in the 'Notebook' section
 
-2. Click the menu button in the top left and go to `File > Open Folder...` and type in the path for our `HW0` folder: `/home/<username>/ICS45C/HW0`.
+2. Click the menu button in the top left and go to `File > Open Folder...` and type in the path for our `HW0` folder: `/home/<username>/ICS46/HW0`.
 
 ![Step 1](/assets/5-1.jpg)
 ![Step 2](/assets/5-2.jpg)
