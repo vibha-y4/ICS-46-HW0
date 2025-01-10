@@ -241,7 +241,7 @@ ls
 ## 9. Pushing changes to git
 
 **IMPORTANT**
-For all the GTests to work and for the autograder to work as intented you must add a `src` directory and move the `main.cpp` file into it
+For all the GTests to work and for the autograder to work as intended you must add a `src` directory and move the `main.cpp` file into it
 
 ```bash
 └── src
